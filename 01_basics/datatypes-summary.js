@@ -6,6 +6,9 @@ const temp = null;
 let city;
 const bigInt = 79529379375913759319531n;
 const id = Symbol("123");
+const id2 = Symbol("123");
+
+console.log(id === id2);
 
 // console.log(typeof str1);
 // console.log(typeof score);
