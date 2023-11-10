@@ -58,5 +58,25 @@ const user = [
 // console.log(Object.values(regularUser));
 // console.log(Object.entries(regularUser));
 
-console.log(regularUser.hasOwnProperty("id"));
-console.log(regularUser.hasOwnProperty("age"));
+// console.log(regularUser.hasOwnProperty("id"));
+// console.log(regularUser.hasOwnProperty("age"));
+
+const course = {
+  courseName: "JS Course",
+  price: "free",
+  courseInstructor: "Shubham",
+};
+
+console.log(course.courseInstructor);
+
+const { courseInstructor: instructor } = course;
+console.log(instructor);
+
+//api  - JSON Structure
+// {
+//     "name" : "shubham",
+//     "age" : 23,
+//     "price" : "free"
+// }
+
+// [{}, {}, {}]
