@@ -28,3 +28,6 @@ chai();
 
 const addTwo = (num1, num2) => num1 + num2;
 console.log(addTwo(4, 6));
+
+const obj = () => ({ name: "Lakshay" });
+console.log(obj());
