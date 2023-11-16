@@ -1,4 +1,4 @@
-//for
+//for loop and break & continue
 
 for (let i = 1; i <= 5; i++) {
   const element = i;
