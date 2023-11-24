@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Timeout</title>
+  </head>
+  <body>
+    <h1 id="title">Hey, Welcome to the site</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+
+  <script>
+    const changeMe = setTimeout(changeText, 2000);
+
+    function changeText() {
+      document.querySelector("#title").innerHTML =
+        "Hello, User Welcome to the site";
+    }
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(changeMe);
+      console.log("Stopped");
+    });
+  </script>
+</html>
