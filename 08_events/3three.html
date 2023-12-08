@@ -13,7 +13,7 @@
 
   <script>
     function sayDate(str) {
-      document.querySelector("#title").innerHTML = `${str},  ${Date.now()}`;
+      document.querySelector("#title").innerHTML = `${str},  ${new Date()}`;
     }
     let intervalId;
     document.querySelector("#start").addEventListener("click", function () {
