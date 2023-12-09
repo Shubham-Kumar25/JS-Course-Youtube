@@ -9,9 +9,20 @@ let fruitTaste = {
   },
 };
 
-Objects.prototype.shubham = function () {
-  console.log("Shubham is present");
+// Objects.prototype.shubham = function () {
+//   console.log("Shubham is present");
+// };
+
+// console.log(myFruits.shubham());
+// console.log(fruitTaste.shubham());
+
+const teacher = {
+  name: "shubham",
 };
 
-console.log(myFruits.shubham());
-console.log(fruitTaste.shubham());
+const TASupport = {
+  makeAssignment: "JS",
+};
+
+Object.setPrototypeOf(TASupport, teacher);
+console.log(TASupport.name);
